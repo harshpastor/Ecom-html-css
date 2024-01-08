@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* global styles */
-
+body{
+  background-color: #dadae5;
+  /* background-color: #d3e4ea; */
+}
 * {
   margin: 0;
   padding: 0;
@@ -36,6 +39,7 @@ p {
   padding: 40px 0;
 }
 .section-m1 {
+  box-shadow: 0px 18.047758102416992px 31.583576202392578px 0px rgba(1, 5, 107, 0.15);
   margin: 40px 0;
 }
 
@@ -65,7 +69,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #e3e6f3;
+  background-color: rgba(68, 70, 85, 0.41);
+  backdrop-filter: blur(10px);
   padding: 20px 80px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   z-index: 999;
@@ -140,11 +145,13 @@ body {
   align-items: flex-start;
   justify-content: center;
   padding: 0 80px;
+
 }
 
 #hero h4 {
   padding-bottom: 15px;
   font-size: 40px;
+  color: #b78f5d;
 }
 #hero h2{
   font-size: 70px;
@@ -181,8 +188,9 @@ body {
   width: 180px;
   text-align: center;
   padding: 25px 15px;
+  background-color: rgba(255, 255, 255, 0.451);
   box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
-  border: 1px solid #cce7d0;
+  border: 1.5px solid #0881797f;
   border-radius: 4px;
   margin: 15px 0;
   transition: box-shadow 0.3s;
@@ -233,13 +241,14 @@ body {
 }
 .product-section .product-cart {
   width: 280px;
-  border: 1px solid #ebebeb;
+  border: 1.5px solid #ebebeb;
   padding: 13px;
   margin-bottom: 30px;
   border-radius: 25px;
   position: relative;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
   transition: box-shadow 0.2s;
+  background-color: #2f25342f;
 }
 .product-section .product-cart:hover {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
@@ -295,13 +304,6 @@ body {
   padding: 20px 0;
 }
 
-/* new arrival section styles 
-  this section gets the same styles 
-  in featured products section
-*/
-
-/* banners section styles */
-
 #banners {
   margin: 0 60px;
 }
@@ -311,6 +313,7 @@ span {
   color: rgb(248, 248, 248);
 }
 #banners .big-banners {
+  box-shadow: 0px 18.047758102416992px 31.583576202392578px 0px rgba(250, 250, 250, 0.954);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -326,6 +329,7 @@ span {
   padding: 25px;
   background-size: cover;
   backdrop-filter: blur(8%);
+
 }
 #banners .big-banners button {
   margin-top: 20px;
@@ -358,6 +362,8 @@ span {
   background-image: url(images/banner/b18.jpg);
 }
 #banners .small-banners {
+  box-shadow: 0px 18.047758102416992px 31.583576202392578px 0px rgba(250, 250, 250, 0.954);
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -384,6 +390,7 @@ span {
 
 #newsletter {
   background-image: url(images/banner/b14.png);
+  /* filter: contrast(0.5) ; */
   background-repeat: no-repeat;
   background-position: 180px;
   background-color: #041e42;
@@ -409,7 +416,7 @@ span {
   padding: 20px;
   width: 350px;
   height: 56px;
-  background-color: #d1d0d0;
+  background-color: #ffffff;
   border-radius: 6px 0 0 6px;
   font-size: 18px;
 
@@ -423,8 +430,8 @@ span {
   padding: 20px;
   border: none;
   width: 120px;
-  background-color: #088178;
-  color: white;
+  background-color: #158a83;
+  color: rgb(194, 237, 247);
   font-size: 17px;
   border-radius: 0 6px 6px 0;
   cursor: pointer;
